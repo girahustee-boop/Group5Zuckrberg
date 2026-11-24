@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  | DepEd E-Tech Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <div class="logo">
+                <h1>DepEd E-Tech Hub</h1>
+                <p>Empowerment Technologies for SHS</p>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="lessons.html" class="dropbtn">
+                            Lessons <span class="arrow">▼</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="lesson 1 Languages, Media & Media Languages.html">
+                                    Lesson 1: Introduction to Media and Information Litteracy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="lesson 2 Media & Information Sources.html">
+                                    Lesson 2: Media & Information Sources
+                                </a>
+                            </li>
+                           <li>
+                                <a href="lesson 3 information of literacy.html">
+                                    Lesson 3: Information Literacy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="lesson 4 Types of Media.html">
+                                    Lesson 4: Types of Media
+                                </a>
+                            </li>
+                            <li>
+                                <a href="lesson 5 Media & information sources.html">
+                                    Lesson 5: Media & Information Sources
+                                </a>
+                            </li>
+                            <li>
+                                <a href="lesson 6 Media Languages.html">
+                                    Lesson 6: Media Languages
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="activities.html" class="active" aria-current="page">Activities</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container main-content">
+        <h2>Student Learning Activities</h2>
+        <p>Use these exercises for individual practice, group tasks, or classroom assessment.</p>
+
+
+        <details class="activity-card" id="activity-1">
+            <summary>
+                <span class="badge">Activity 1</span>
+                <h3>Web Feature Classification Matrix</h3>
+            </summary>
+            <div class="activity-content">
+                <p><strong>Instructions:</strong> Type the web type and your reason for each answer in the fields below.</p>
+
+                <table class="activity-table">
+                    <thead>
+                        <tr>
+                            <th>Platform / Feature</th>
+                            <th>Web Type (1.0 / 2.0 / 3.0)</th>
+                            <th>Justification / Reason</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1. Online Personal Blog with Comment Section</td>
+                            <td><input class="activity-answer" type="text" aria-label="Web type for Online Personal Blog with Comment Section" placeholder="e.g. Web 2.0"></td>
+                            <td><textarea class="activity-answer" aria-label="Justification for Online Personal Blog with Comment Section" rows="2" placeholder="Type your reason"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>2. AI Assistant tailoring search results</td>
+                            <td><input class="activity-answer" type="text" aria-label="Web type for AI Assistant tailoring search results" placeholder="e.g. Web 3.0"></td>
+                            <td><textarea class="activity-answer" aria-label="Justification for AI Assistant tailoring search results" rows="2" placeholder="Type your reason"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>3. Read-only Online Encyclopedia from 1996</td>
+                            <td><input class="activity-answer" type="text" aria-label="Web type for Read-only Online Encyclopedia from 1996" placeholder="e.g. Web 1.0"></td>
+                            <td><textarea class="activity-answer" aria-label="Justification for Read-only Online Encyclopedia from 1996" rows="2" placeholder="Type your reason"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>4. Collaborative Document Editor (Google Docs)</td>
+                            <td><input class="activity-answer" type="text" aria-label="Web type for Collaborative Document Editor (Google Docs)" placeholder="e.g. Web 2.0"></td>
+                            <td><textarea class="activity-answer" aria-label="Justification for Collaborative Document Editor (Google Docs)" rows="2" placeholder="Type your reason"></textarea></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </details>
+
+
+        <details class="activity-card" id="activity-2">
+            <summary>
+                <span class="badge">Activity 2</span>
+                <h3>Netiquette Case Analysis &amp; Discussion Questions</h3>
+            </summary>
+            <div class="activity-content">
+                <p><strong>Scenario:</strong> A classmate creates a public post calling out another student for a group project mistake. The post receives negative comments from other peers.</p>
+
+                <h4>Guide Questions:</h4>
+                <ol>
+                    <li>Which Core Rules of Netiquette were violated in this situation?</li>
+                    <li>How could the issue have been addressed constructively without public posting?</li>
+                    <li>Draft a short response advising the author on responsible digital citizenship.</li>
+                </ol>
+            </div>
+        </details>
+
+
+        <details class="activity-card" id="performance-task">
+            <summary>
+                <span class="badge">Performance Task</span>
+                <h3>Interactive Knowledge Check</h3>
+            </summary>
+            <div class="activity-content">
+                <p>Select the correct answer below to test your understanding:</p>
+
+                <div class="quiz-item">
+                    <p><strong>Question:</strong> Which feature best distinguishes Web 2.0 from Web 1.0?</p>
+                    <button class="quiz-btn" onclick="checkAnswer(this, false)">A) Read-only text files</button>
+                    <button class="quiz-btn" onclick="checkAnswer(this, true)">B) User-generated interactive content</button>
+                    <button class="quiz-btn" onclick="checkAnswer(this, false)">C) Faster network cables</button>
+                    <p class="quiz-feedback"></p>
+                </div>
+            </div>
+        </details>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Department of Education - Supplementary Learning Resource Project.</p>
+            <p>Subject: Empowerment Technologies (E-Tech) | Grade 11/12 SHS</p>
+        </div>
+    </footer>
+
+
+    <script>
+        function checkAnswer(button, isCorrect) {
+            const feedback = button.parentElement.querySelector('.quiz-feedback');
+            if (isCorrect) {
+                feedback.textContent = "✅ Correct! Web 2.0 allows users to generate and share content actively.";
+                feedback.style.color = "#2e7d32";
+            } else {
+                feedback.textContent = "❌ Incorrect. Try again!";
+                feedback.style.color = "#c62828";
+            }
+        }
+    </script>
+</body>
+</html>
